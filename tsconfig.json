@@ -25,11 +25,14 @@
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
   },
   "files": ["src/index.ts"],
   "paths": {
     "@scanapp/html5-qrcode": ["./dist"],
     "@scanapp/html5-qrcode/*": ["./dist/*"]
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
