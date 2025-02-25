@@ -13,37 +13,43 @@
  * 
  * TODO(mebjas): Support internalization.
  */
+
+/**
+ * Translated by Google Gemini
+ * 
+ * Uploaded by tasatman
+ * 
+ * Many thanks to mebjas for this great library
+ */
 export class Html5QrcodeStrings {
 
     public static codeParseError(exception: any): string {
-        return `QR code parse error, error = ${exception}`;
+        return `QR kodu ayrıştırma hatası, hata = ${exception}`;
     }
 
     public static errorGettingUserMedia(error: any): string {
-        return `Error getting userMedia, error = ${error}`;
+        return `Kullanıcı medyasına erişim hatası, hata = ${error}`;
     }
 
     public static onlyDeviceSupportedError(): string {
-        return "The device doesn't support navigator.mediaDevices , only "
-        + "supported cameraIdOrConfig in this case is deviceId parameter "
-        + "(string).";
+        return "Cihaz navigator.mediaDevices'ı desteklemiyor, bu durumda yalnızca "
+        + "desteklenen cameraIdOrConfig, deviceId parametresi (string) olmalıdır.";
     }
 
     public static cameraStreamingNotSupported(): string {
-        return "Camera streaming not supported by the browser.";
+        return "Tarayıcı tarafından kamera akışı desteklenmiyor.";
     }
 
     public static unableToQuerySupportedDevices(): string {
-        return "Unable to query supported devices, unknown error.";
+        return "Desteklenen cihazlar sorgulanamıyor, bilinmeyen hata.";
     }
 
     public static insecureContextCameraQueryError(): string {
-        return "Camera access is only supported in secure context like https "
-        + "or localhost.";
+        return "Kamera erişimi yalnızca https veya localhost gibi güvenli bağlamlarda desteklenir.";
     }
 
     public static scannerPaused(): string {
-        return "Scanner paused";
+        return "Tarayıcı duraklatıldı";
     }
 }
 
@@ -55,71 +61,71 @@ export class Html5QrcodeStrings {
 export class Html5QrcodeScannerStrings {
 
     public static scanningStatus(): string {
-        return "Scanning";
+        return "Taranıyor";
     }
 
     public static idleStatus(): string {
-        return "Idle";
+        return "Boşta";
     }
 
     public static errorStatus(): string {
-        return "Error";
+        return "Hata";
     }
 
     public static permissionStatus(): string {
-        return "Permission";
+        return "İzin";
     }
 
     public static noCameraFoundErrorStatus(): string {
-        return "No Cameras";
+        return "Kamera Yok";
     }
 
     public static lastMatch(decodedText: string): string {
-        return `Last Match: ${decodedText}`;
+        return `Son Eşleşme: ${decodedText}`;
     }
 
     public static codeScannerTitle(): string {
-        return "Code Scanner";
+        return "Kod Tarayıcı";
     }
 
     public static cameraPermissionTitle(): string {
-        return "Request Camera Permissions";
+        return "Kamera İzinleri İsteği";
     }
 
     public static cameraPermissionRequesting(): string {
-        return "Requesting camera permissions...";
+        return "Kamera izinleri isteniyor...";
     }
 
     public static noCameraFound(): string {
-        return "No camera found";
+        return "Kamera bulunamadı";
     }
 
     public static scanButtonStopScanningText(): string {
-        return "Stop Scanning";
+        return "Taramayı Durdur";
     }
 
     public static scanButtonStartScanningText(): string {
-        return "Start Scanning";
+        return "Taramayı Başlat";
     }
 
     public static torchOnButton(): string {
-        return "Switch On Torch";
+        return "Feneri Aç";
     }
 
     public static torchOffButton(): string {
-        return "Switch Off Torch";
+        return "Feneri Kapat";
     }
 
     public static torchOnFailedMessage(): string {
-        return "Failed to turn on torch";
+        return "Fener açılamadı";
     }
 
     public static torchOffFailedMessage(): string {
-        return "Failed to turn off torch";
+        return "Fener kapatılamadı";
     }
 
     public static scanButtonScanningStarting(): string {
-        return "Launching Camera...";
+        return "Kamera Başlatılıyor...";
     }
 
     /**
@@ -128,7 +134,7 @@ export class Html5QrcodeScannerStrings {
      * This will be used to switch to file based scanning.
      */
     public static textIfCameraScanSelected(): string {
-        return "Scan an Image File";
+        return "Bir Resim Dosyası Tara";
     }
 
     /**
@@ -137,53 +143,53 @@ export class Html5QrcodeScannerStrings {
      * This will be used to switch to camera based scanning.
      */
     public static textIfFileScanSelected(): string {
-        return "Scan using camera directly";
+        return "Doğrudan Kamerayla Tara";
     }
 
     public static selectCamera(): string {
-        return "Select Camera";
+        return "Kamera Seç";
     }
 
     public static fileSelectionChooseImage(): string {
-        return "Choose Image";
+        return "Resim Seç";
     }
 
     public static fileSelectionChooseAnother(): string {
-        return "Choose Another";
+        return "Başka Birini Seç";
     }
 
     public static fileSelectionNoImageSelected(): string {
-        return "No image choosen";
+        return "Resim seçilmedi";
     }
 
     /** Prefix to be given to anonymous cameras. */
     public static anonymousCameraPrefix(): string {
-        return "Anonymous Camera";
+        return "Anonim Kamera";
     }
 
     public static dragAndDropMessage(): string {
-        return "Or drop an image to scan";
+        return "Veya taramak için bir resim bırakın";
     }
 
     public static dragAndDropMessageOnlyImages(): string {
-        return "Or drop an image to scan (other files not supported)";
+        return "Veya taramak için bir resim bırakın (diğer dosyalar desteklenmiyor)";
     }
 
     /** Value for zoom. */
     public static zoom(): string {
-        return "zoom";
+        return "zoom"; // This one is usually kept in English
     }
 
     public static loadingImage(): string {
-        return "Loading image...";
+        return "Resim yükleniyor...";
     }
 
     public static cameraScanAltText(): string {
-        return "Camera based scan";
+        return "Kamera tabanlı tarama";
     }
 
     public static fileScanAltText(): string {
-        return "Fule based scan";
+        return "Dosya tabanlı tarama";
     }
 }
 
@@ -191,10 +197,10 @@ export class Html5QrcodeScannerStrings {
 export class LibraryInfoStrings {
 
     public static poweredBy(): string {
-        return "Powered by ";
+        return "Güçlendiren: ";
     }
 
     public static reportIssues(): string {
-        return "Report issues";
+        return "Sorunları bildir";
     }
 }
