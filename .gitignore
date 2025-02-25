@@ -1,9 +1,39 @@
+# OS-specific files
 .DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+
+# Dependencies
 node_modules/
 package-lock.json
+yarn.lock
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor & IDE settings
 .vscode/
+.idea/
+*.sublime-workspace
+
+# Build output
 dist/
-src/*.d.ts
-src/*/*.d.ts
-src/*/*/*.d.ts
+build/
+out/
+.tmp/
+.cache/
+
+# TypeScript declaration files
+src/**/*.d.ts
+
+# Documentation
 docs/
