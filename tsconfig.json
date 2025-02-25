@@ -3,7 +3,6 @@
     // "target": "es5",
     // "module": "ES2015",
     "sourceMap": true,
-    "moduleResolution": "Node",
     "declaration": true,
     "lib": ["DOM", "ES2017", "ES2018"],
 
@@ -22,6 +21,7 @@
 
     "target": "ES5",
     "module": "ESNext",
+    "moduleResolution": "Node",
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,

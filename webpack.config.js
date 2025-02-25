@@ -15,14 +15,19 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.ts$/,   // Ensure this correctly matches .ts files
-                use: "ts-loader",
+                test: /\.ts$/,
                 exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ["@babel/preset-typescript"],
+                    },
+                },
             },
-        ]
+        ],
     },
     optimization: {
         minimize: true,
-        usedExports: true
+        usedExports: true,
     }
 };

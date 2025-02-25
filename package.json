@@ -55,10 +55,12 @@
   "homepage": "https://github.com/tasatman/html5-qrcode-tr#readme",
   "devDependencies": {
     "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.11.4",
+    "@babel/core": "^7.26.9",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.26.0",
     "@types/chai": "^4.3.0",
+    "babel-loader": "^9.2.1",
     "babel-minify": "^0.5.1",
     "chai": "^4.3.4",
     "docusaurus-plugin-typedoc": "^0.18.0",
