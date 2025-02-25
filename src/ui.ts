@@ -53,7 +53,7 @@ class LibraryInfoDiv {
 
         const reportIssueLink = document.createElement("a");
         reportIssueLink.innerText = LibraryInfoStrings.reportIssues();
-        reportIssueLink.href = "https://github.com/mebjas/html5-qrcode/issues";
+        reportIssueLink.href = "https://github.com/tasatman/html5-qrcode-tr/issues";
         reportIssueLink.target = "new";
         reportIssueLink.style.color = "white";
         this.infoDiv.appendChild(reportIssueLink);
