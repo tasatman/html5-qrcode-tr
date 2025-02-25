@@ -18,8 +18,7 @@
     "noImplicitAny": true,
 
     // Allow javascript source to be built
-    "allowJs": true,
-    "types": ["mocha"]
+    "allowJs": true
   },
   "files": ["src/index.ts"],
   "paths": {
