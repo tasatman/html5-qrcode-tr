@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "ES2015",
+    // "target": "es5",
+    // "module": "ES2015",
     "sourceMap": true,
     "moduleResolution": "Node",
     "declaration": true,
@@ -9,7 +9,7 @@
 
     // ^ Build the transpiled javascript to transpiled/ dir.
     // Flags to ensure code quality.
-    "strict": true,
+    // "strict": true,
     "noImplicitReturns": true,
     "noUnusedParameters": true,
     "experimentalDecorators": true,
@@ -18,7 +18,14 @@
     "noImplicitAny": true,
 
     // Allow javascript source to be built
-    "allowJs": true
+    "allowJs": true,
+
+    "target": "ES5",
+    "module": "ESNext",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
   },
   "files": ["src/index.ts"],
   "paths": {
