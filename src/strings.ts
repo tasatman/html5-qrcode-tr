@@ -89,7 +89,7 @@ export class Html5QrcodeScannerStrings {
     }
 
     public static cameraPermissionTitle(): string {
-        return "Kamera İzinleri İsteği";
+        return "Kamera İzni Ver";
     }
 
     public static cameraPermissionRequesting(): string {

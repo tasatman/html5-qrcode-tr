@@ -515,8 +515,8 @@ export class Html5QrcodeScanner {
         header.style.margin = "0px";
         dashboard.appendChild(header);
 
-        let libraryInfo = new LibraryInfoContainer();
-        libraryInfo.renderInto(header);
+        // let libraryInfo = new LibraryInfoContainer();
+        // libraryInfo.renderInto(header);
 
         const headerMessageContainer = document.createElement("div");
         headerMessageContainer.id = this.getHeaderMessageContainerId();
